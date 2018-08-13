@@ -1,0 +1,30 @@
+{
+  "name": "imperfect-harvest",
+  "version": "1.0.0",
+  "description": "Capstone Project solving national food waste issue as a subscription service.",
+  "main": "(src/server.js)",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoefWoodward/imperfect-harvest.git"
+  },
+  "author": "Zoe Woodward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZoefWoodward/imperfect-harvest/issues"
+  },
+  "homepage": "https://github.com/ZoefWoodward/imperfect-harvest#readme",
+  "devDependencies": {
+    "jasmine": "^3.0.0",
+    "request": "^2.83.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
