@@ -7,3 +7,5 @@
 > Mockups available in project user stories.
 
 > Made with Express.js, Request, Node.js, PostgreSQL/Sequelize/Sequelize CLI, EJS, and Bootstrap.
+
+> Deployed with Heroku
