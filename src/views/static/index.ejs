@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title><%= title %></title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/application.css">
+        <% include ../static/partials/head.ejs %>
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Imperfect Harvest</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Home
-                              <span class="sr-only">(current)</span>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Why Imperfect
-                              <span class="sr-only">(current)</span>
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">How It Works
-                              <span class="sr-only">(current)</span>
-                            </a>
-                          </li>
-                        </ul>
-                </div>
-            </div>
-        </nav>
+        <% include ./partials/navbar.ejs %>
+
         <!-- Page Content-->
         <main class="container-fluid">
 
              <!-- Jumbotron Header and Backbround Image-->
-             <div class="background-image">
-                <header class="jumbotron my-4">
-                    <h1 class="display-3">Welcome to Imperfect Harvest</h1>
+                <header class="jumbotron jumbotron-fluid-1">
+                    <h1 class="display-3"> <%= title %> </h1>
                     <p class="lead">Solving the nations food waste problem.</p>
                     <a href="#" class="btn btn-primary btn-lg">Sign Up</a>
               </header>
-            </div>
 
               <!--Page Features-->
               <!--First Row-->
@@ -86,7 +54,7 @@
                   <section class="col-lg-12">
                       <h7 class="card-title">Fact: 1 in 5 fruits and veggies grown in the U.S. don't meet cosmetic standards - the crooked carrot, the curvy cucumber, the undersized apple - usually causing them to go to waste. We're here to change that.</h7>
                       <p class="card-text">
-                          <a href="#" class="btn btn-default" role="button">Make An Impact!</a>
+                          <a href="#" class="btn btn-primary btn-lg" role="button">Make An Impact!</a>
                       </p>
                   </section>
                 </section>
@@ -95,11 +63,9 @@
             </main>
             <!-- End Container-->
 
-            <script
-                src="http://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous">
-            </script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <% include ./partials/baseScripts.ejs %>
     </body>
+    <footer class="page-footer">
+        <% include ../static/partials/footer.ejs %>
+    </footer>
 </html>
