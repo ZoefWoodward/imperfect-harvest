@@ -2,7 +2,13 @@ body {
     padding-top: 54px;
   }
 
-.jumbotron {
+.jumbotron-fluid-1 {
   background: url("../img/veggie-images/veggie-background.jpg") no-repeat center center;
-  
+  height: 100%;
+  width: auto;
+}
+
+.jumbotron-fluid-2{
+  background: url("../img/why-imperfect/why-imperfect.jpg") no-repeat center center;
+  height: 300px;
 }
