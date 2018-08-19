@@ -9,6 +9,11 @@ body {
 }
 
 .jumbotron-fluid-2{
-  background: url("../img/why-imperfect/why-imperfect.jpg") no-repeat center center;
-  height: 300px;
+  background: url("../img/why-imperfect/why-imperfect.jpg") no-repeat fixed center;
+  
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
