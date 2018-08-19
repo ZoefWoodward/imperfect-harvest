@@ -2,18 +2,30 @@ body {
     padding-top: 54px;
   }
 
-.jumbotron-fluid-1 {
-  background: url("../img/veggie-images/veggie-background.jpg") no-repeat center center;
-  height: 100%;
-  width: auto;
+  /* Homepage Jumbotron */
+.jumbotron-fluid {
+  background: url("../img/veggie-images/veggie-background.jpg") no-repeat center;
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+.jumbotron .header {
+  position: relative;
 }
 
-.jumbotron-fluid-2{
-  background: url("../img/why-imperfect/why-imperfect.jpg") no-repeat fixed center;
-  
-}
-
+/* Why and How Images */
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+.banner-content {
+width: 100%;
+height: auto;
+background: url("../img/preferences/preferences-banner.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+margin-top: 35px;
+
 }

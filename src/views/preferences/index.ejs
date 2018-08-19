@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+      <% include ../static/partials/navbar.ejs %>
+
+<!--Preference Banner-->
+    <main class="container-fluid">
+      <div class="banner-content">
+        
+              <h3 class="title text-center"> Your imperfect box is affordable, customizable, and delicious!</h3>
+
+          <section class="row">
+              <section class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                <img src="../img/preferences/icon-money.png" height="70px" width="70px";>
+                <h5 class="title">SERIOUSLY AFFORDABLE</h5>
+                <p class="description">Pay 30-50% less than grocery store prices</p>
+              </section>
+
+              <section class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                  <img src="../img/preferences/icon-customize.png" height="70px" width="70px";>
+                  <h5 class="title">FULLY CUSTOMIZABLE</h5>
+                  <p class="description">Choose between a conventionally or organically grown harvest</p>
+                </section>
+
+                <section class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                    <img src="../img/preferences/icon-delivery.png" height="70px" width="70px";>
+                    <h5 class="title">EASY DELIVERY</h5>
+                    <p class="description">Delivered right to your door</p>
+                  </section>
+
+                  <section class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+                      <img src="../img/preferences/icon-waste.png" height="70px" width="70px";>
+                      <h5 class="title">HELPS FIGHT FOOD WASTE</h5>
+                      <p class="description">Save produce that might otherwise go to waste</p>
+                    </section>
+        </section>
+      </div>
+
+<!--Preference Options-->
+      <section class="row  mx-auto">
+        <secton class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center ">
+          <h3 class="card-title">Choose from our harvest options</h3>
+        </secton>
+
+<!--Mixed-->
+        <section class="row">
+          <section class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center ">
+            <div class="card" style="width: 100%; height: auto;">
+              <img class="card-img-top" src="../img/select-box/mixed.jpg" alt="Photo of Mixed Produce">
+              <h5 class="card-title">Mixed Fruit and Veggie</h5>
+              <p class="card-text">A mix of delicious fruits and veggies. Great for saving money and eating healthy.           </p>
+              <a href="/users/signup" class="btn btn-primary">I want it!</a>
+            </div>
+          </section>
+
+<!--Organic-->
+        <section class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+            <div class="card" style="width: 100%; height: auto;">
+              <img class="card-img-top" src="../img/select-box/organic.jpg" alt="Photo of Organic Produce">
+              <h5 class="card-title">Organic Fruit and Veggie</h5>
+              <p class="card-text">100% certified-organic mix of fruit and veggies. Perfect for weekly cooking!</p>
+              <a href="/users/signup" class="btn btn-primary">I want it!</a>
+            </div>
+          </section>
+          
+        </section>
+
+      </section>
+    </main>
+  </body>
+  <footer>
+      <% include ../static/partials/footer.ejs %>
+  </footer>
+</html>
