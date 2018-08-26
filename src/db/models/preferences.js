@@ -1,6 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Preferences = sequelize.define('Preferences', {
+    
     userId: {
     type: DataTypes.INTEGER,
     onDelete: "CASCADE",
@@ -10,12 +11,18 @@ module.exports = (sequelize, DataTypes) => {
       as: "userId"
     }
     },
-    mixed: DataTypes.STRING,
-    organic: DataTypes.STRING
+
+    mixed: {
+      type: DataTypes.STRING,
+    },
+
+    organic: {
+      type: DataTypes.STRING.INTEGER
+    }
   }, {});
   Preferences.associate = function(models) {
     // associations defined here
-    Preferences.belongTo(models.User, {
+    Preferences.belongsTo(models.User, {
       foreignKey: "userId",
       onDelete: "CASCADE"
     });
